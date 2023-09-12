@@ -9,14 +9,8 @@
   background: rgb(252, 252, 192);
 }
 
-.dialog {
-  padding: 20px 20px;
-  /* background: #fff; */
-  background: rgb(252, 252, 192);
-}
-
 .messages {
-  /* padding: 20px 20px; */
+  padding: 20px 20px;
   background: rgb(252, 252, 192);
 }
 

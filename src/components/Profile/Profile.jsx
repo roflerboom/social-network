@@ -3,11 +3,11 @@ import React from "react";
 import MyPost from "./MyPost/MyPost";
 import Wallpaper from "./Wallpaper/Wallpaper";
 
-const Profile = () => {
+const Profile = (props) => {
   return (
     <div>
       <Wallpaper />
-      <MyPost />
+      <MyPost posts={props.posts} />
     </div>
   );
 };
