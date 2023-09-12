@@ -1,0 +1,19 @@
+.nav {
+  grid-area: nav;
+  padding: 20px 20px;
+  row-gap: 100px;
+  border-radius: 20px;
+  border: 3px solid rgb(190, 202, 255);
+  background: #fff;
+}
+
+a.noactive {
+  text-decoration: none;
+}
+
+a.active {
+  /* color: red; */
+  font-weight: 700;
+  text-decoration: none;
+  /* background: #fff; */
+}

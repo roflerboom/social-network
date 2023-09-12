@@ -1,0 +1,12 @@
+.content {
+  grid-area: content;
+  background: red;
+  /* display: flex; */
+  justify-content: center;
+  align-items: center;
+}
+.content img {
+  flex-shrink: 0;
+  height: 400px;
+  width: 100%;
+}

@@ -1,0 +1,36 @@
+.dialogs {
+  display: grid;
+  grid-template-columns: 2fr 10fr;
+  gap: 20px;
+}
+
+.dialogsItems {
+  padding: 20px 20px;
+  background: rgb(252, 252, 192);
+}
+
+.dialog {
+  padding: 20px 20px;
+  /* background: #fff; */
+  background: rgb(252, 252, 192);
+}
+
+.messages {
+  /* padding: 20px 20px; */
+  background: rgb(252, 252, 192);
+}
+
+.message {
+  margin-bottom: 20px;
+}
+
+a.noactive {
+  text-decoration: none;
+}
+
+a.active {
+  /* color: red; */
+  font-weight: 700;
+  text-decoration: none;
+  /* background: #fff; */
+}
