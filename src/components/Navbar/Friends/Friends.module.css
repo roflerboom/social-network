@@ -1,0 +1,11 @@
+.avatar {
+  width: 48px;
+  height: 48px;
+  border-radius: 32px;
+}
+
+.lineGroup {
+  display: grid;
+  grid-template-areas: "friend friend";
+  /* float: ; */
+}

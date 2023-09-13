@@ -7,8 +7,9 @@ import Dialogs from "./components/Dialogs/Dialogs";
 import News from "./components/News/News";
 import Music from "./components/Music/Music";
 import Settings from "./components/Settings/Settings";
+import Friends from "./components/Navbar/Friends/Friends";
 
-function App({ postsList, dialogsList, messagesList }) {
+function App({ state }) {
   return (
     <BrowserRouter>
       <div className="app_wrapper">
@@ -16,20 +17,19 @@ function App({ postsList, dialogsList, messagesList }) {
         <Navbar />
         <div className="app_wrapper_content">
           <Routes>
-            <Route path="/profile" element={<Profile posts={postsList} />} />
+            <Route
+              path="/profile"
+              element={<Profile state={state.profilePage} />}
+            />
 
             <Route
               path="/dialogs/*"
-              element={
-                <Dialogs
-                  dialogsList={dialogsList}
-                  messagesList={messagesList}
-                />
-              }
+              element={<Dialogs state={state.dialogsPage} />}
             />
             <Route path="/news" element={<News />} />
             <Route path="/music" element={<Music />} />
             <Route path="/settings" element={<Settings />} />
+            <Route path="/friends" element={<Friends />} />
           </Routes>
         </div>
       </div>

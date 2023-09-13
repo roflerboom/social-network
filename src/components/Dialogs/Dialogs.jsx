@@ -3,12 +3,12 @@ import s from "./Dialogs.module.css";
 import DialogItem from "./DialogItem/DialogItem";
 import Message from "./Message/Message";
 
-function Dialogs({ dialogsList, messagesList }) {
-  const dialogsElements = dialogsList.map((d) => (
+function Dialogs({ state }) {
+  const dialogsElements = state.dialogsList.map((d) => (
     <DialogItem key={d.key} name={d.name} /> //id={d.id}
   ));
 
-  const messageElements = messagesList.map((m) => (
+  const messageElements = state.messagesList.map((m) => (
     <Message message={m.message} key={m.key} /> //id={m.id}
   ));
 
