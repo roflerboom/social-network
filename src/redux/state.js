@@ -23,9 +23,11 @@ const state = {
     { key: 1, name: "Misha", secondname: "Sokolov" },
     { key: 2, name: "Masha", secondname: "Peresypkina" },
   ],
+  sideBar: {},
 };
 
-export let addPost = (postMessage) => {
+export const addPost = (postMessage) => {
+  debugger;
   let newPost = {
     key: 5,
     message: postMessage,

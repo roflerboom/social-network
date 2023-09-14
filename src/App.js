@@ -9,7 +9,8 @@ import Music from "./components/Music/Music";
 import Settings from "./components/Settings/Settings";
 import Friends from "./components/Navbar/Friends/Friends";
 
-function App({ state }) {
+function App({ state, addPost }) {
+  // debugger;
   return (
     <BrowserRouter>
       <div className="app_wrapper">
@@ -19,7 +20,7 @@ function App({ state }) {
           <Routes>
             <Route
               path="/profile"
-              element={<Profile state={state.profilePage} />}
+              element={<Profile state={state.profilePage} addPost={addPost} />}
             />
 
             <Route
