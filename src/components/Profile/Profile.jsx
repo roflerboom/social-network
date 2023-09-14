@@ -9,7 +9,12 @@ const Profile = (props) => {
     <div>
       <Wallpaper />
 
-      <MyPost posts={props.state.postsList} addPost={props.addPost} />
+      <MyPost
+        posts={props.state.postsList}
+        newPostText={props.state.newPostText}
+        apdateNewPostText={props.apdateNewPostText}
+        addPost={props.addPost}
+      />
     </div>
   );
 };
