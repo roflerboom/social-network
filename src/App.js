@@ -10,7 +10,7 @@ import Settings from "./components/Settings/Settings";
 import Friends from "./components/Navbar/Friends/Friends";
 
 // function App({ state, addPost }) {
-function App({ state, addPost, apdateNewPostText }) {
+function App({ store }) {
   // debugger;
   return (
     <div className="app_wrapper">
@@ -22,16 +22,16 @@ function App({ state, addPost, apdateNewPostText }) {
             path="/profile"
             element={
               <Profile
-                state={state.profilePage}
-                addPost={addPost}
-                apdateNewPostText={apdateNewPostText}
+                state={store.getState}
+                addPost={store.addPost}
+                apdateNewPostText={store.apdateNewPostText}
               />
             }
           />
 
           <Route
             path="/dialogs/*"
-            element={<Dialogs state={state.dialogsPage} />}
+            element={<Dialogs state={store._state.dialogsPage} />}
           />
           <Route path="/news" element={<News />} />
           <Route path="/music" element={<Music />} />
